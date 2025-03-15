@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+    background: linear-gradient(135deg, #41ca2f, #6283c9); /* Fondo degradado */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    color: #333;
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.63); /* Fondo semi-transparente */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(111, 75, 145, 0.2); /* Sombra más pronunciada */
+    max-width: 450px;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    border: 1px solid rgba(21, 160, 165, 0.699); /* Borde sutil */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #444;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600; /* Texto más grueso */
+  }
+  
+  .converter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Más espacio entre elementos */
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Espacio entre label y input */
+  }
+  
+  label {
+    font-weight: 600; /* Texto más grueso */
+    color: #555;
+    font-size: 14px;
+  }
+  
+  select, input {
+    padding: 12px;
+    border: 1px solid #3a67c7c0;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #cfa3a3; /* Fondo más claro para inputs */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  }
+  
+  select:focus, input:focus {
+    border-color: #6ccf85; /* Color morado al enfocar */
+    box-shadow: 0 0 8px rgba(57, 71, 116, 0.3); /* Sombra al enfocar */
+    outline: none; /* Elimina el contorno por defecto */
+  }
+  
+  .result {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #444;
+    padding: 15px;
+    background-color: rgba(89, 26, 156, 0.1); /* Fondo sutil para el resultado */
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  /* Botón de conversión (opcional) */
+  button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6a11cb;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2575fc; /* Cambio de color al pasar el mouse */
+  }
+  
+  /* Diseño responsive */
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+      margin: 10px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    select, input {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .result {
+      font-size: 18px;
+    }
+  }
